@@ -1,0 +1,27 @@
+<html>
+    <header>
+        <title>
+            Dialong and click 
+        </title>
+        <script type="application/javascript">
+        function say()
+            {
+                let var_name=this.document.getElementById("name").value;
+                alert("Hi"+var_name);
+            }
+        function hello()
+            {
+                let var_name=this.document.getElementById("name").value;
+                this.document.getElementById("text_here").innerHTML='hello'+name
+            }
+
+        </script>
+    </header>
+    <body>
+        <from name="form1">
+            Name : <input type="text" id ="name" onchange="hello();"> &nbsp;
+            <input type="button" value ='click me' onclick="say();">
+        </from>
+    </body>
+    <div id=""text_here></div>
+</html>

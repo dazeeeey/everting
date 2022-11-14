@@ -1,0 +1,22 @@
+<html>
+    <header>
+        <title>
+            HTML input
+        </title>
+        <script type="application/javascript">
+
+            function say()
+            {
+                let var_name=this.document.getElementById("name").value;
+                alert("Hi"+var_name)
+            }
+
+        </script>
+    </header>
+    <body>
+        <from name='form1'>
+            Name : <input type="text" id="name"> &nbsp;
+            <input type="Button" value="click me" onclick="say();">
+        </from>
+    </body>
+</html>
